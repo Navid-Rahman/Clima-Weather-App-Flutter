@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:clima_flutter_weather_app/screens/loading_screen.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(
+      const MyApp(),
+    );
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

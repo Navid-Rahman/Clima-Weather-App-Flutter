@@ -14,17 +14,23 @@ class WeatherWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          '${weatherData.temperature}°C',
-          style: const TextStyle(fontSize: 24),
-        ),
-        Text(
-          weatherData.weatherDescription,
-          style: const TextStyle(fontSize: 16),
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 15.0),
+      child: Column(
+        children: [
+          Text(
+            '${weatherData.temperature}°C',
+            style: const TextStyle(fontSize: 24),
+          ),
+          const SizedBox(
+            height: 0,
+          ),
+          Text(
+            weatherData.weatherDescription,
+            style: const TextStyle(fontSize: 16),
+          ),
+        ],
+      ),
     );
   }
 }

@@ -35,9 +35,11 @@ class _LoadingScreenState extends State<LoadingScreen> {
         temperature: weatherJson['main']['temp'],
         weatherDescription: weatherJson['weather'][0]['description'],
       );
-      setState(() {
-        this.weatherData = weatherData;
-      });
+      setState(
+        () {
+          this.weatherData = weatherData;
+        },
+      );
     } else {
       throw Exception('Failed to fetch weather data');
     }
