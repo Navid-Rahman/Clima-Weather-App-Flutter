@@ -34,3 +34,5 @@ class WeatherWidget extends StatelessWidget {
     );
   }
 }
+
+// Testing VS code environment
