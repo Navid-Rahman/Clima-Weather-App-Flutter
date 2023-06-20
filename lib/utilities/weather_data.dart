@@ -4,7 +4,7 @@ class WeatherData {
   final double temperature;
   final String weatherDescription;
 
-  WeatherData({required this.temperature, required this.weatherDescription});
+  WeatherData({required this.temperature, required this.weatherDescription, required condition, required cityName});
 }
 
 class WeatherWidget extends StatelessWidget {
@@ -34,5 +34,3 @@ class WeatherWidget extends StatelessWidget {
     );
   }
 }
-
-// Testing VS code environment
